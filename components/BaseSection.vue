@@ -6,7 +6,12 @@
     ]"
   >
     <header class="relative z-10">
-      <h1 class="text-left text-4xl bg-blue-600 w-1/4">
+      <h1
+        class="text-right text-4xl w-1/4 p-4 pr-8"
+        :class="[
+          primary ? 'bg-teal-900 text-gray-100' : 'bg-gray-100 text-gray-900'
+        ]"
+      >
         <slot name="header" />
       </h1>
     </header>
@@ -59,12 +64,12 @@ export default {
 .decor::before {
   opacity: 0.1;
   background-color: theme('colors.blue.400');
-  transform: rotateZ(2deg) scaleX(1.1);
+  transform: skewY(2deg);
 }
 
 .decor::after {
   opacity: 0.1;
   background-color: theme('colors.green.400');
-  transform: rotateZ(6deg) scaleX(1.1);
+  transform: skewY(6deg);
 }
 </style>

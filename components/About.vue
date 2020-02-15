@@ -1,5 +1,5 @@
 <template>
-  <section class="h-screen w-screen bg-green-900">
+  <section class="h-screen w-screen relateive bg-green-900">
     <img
       src="@/assets/images/tibor-zombory-elasticmind-profile-picture.jpg"
       alt="tibor-zombory-elasticmind-profile-picture"
@@ -23,6 +23,14 @@
         </a>
       </li>
     </ul>
+    <button
+      class="border-2 rounded-lg border-yellow-500 px-6 py-2 m-12 absolute bottom-0 right-0 text-2xl text-yellow-500 hover:text-yellow-300 hover:border-yellow-300 transition-colors duration-150 ease-in"
+    >
+      <a href="cv-tibor-zombory.pdf">
+        CV
+      </a>
+      <i class="fa fa-download ml-2" aria-hidden="true"></i>
+    </button>
   </section>
 </template>
 

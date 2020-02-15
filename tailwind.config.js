@@ -7,7 +7,11 @@
 module.exports = {
   theme: {
     inset: {
+      '0': '0',
       '1/2': '50%'
+    },
+    minHeight: {
+      '200': '200px'
     }
   },
   variants: {},
