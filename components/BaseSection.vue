@@ -2,12 +2,12 @@
   <section
     class="w-screen pt-12 section"
     :class="[
-      primary ? 'bg-gray-100 text-gray-900 decor' : 'bg-teal-900 text-gray-100'
+      primary ? 'bg-teal-800 text-gray-900 decor' : 'bg-teal-900 text-gray-100'
     ]"
   >
-    <header class="relative z-10">
+    <header class="relative z-20">
       <h1
-        class="text-right text-4xl w-1/4 p-4 pr-8"
+        class="text-right text-4xl w-1/4 p-4 pr-8 shadow-inner"
         :class="[
           primary ? 'bg-teal-900 text-gray-100' : 'bg-gray-100 text-gray-900'
         ]"
@@ -15,7 +15,7 @@
         <slot name="header" />
       </h1>
     </header>
-    <article class="text-left px-64 py-48 relative z-10 content">
+    <article class="text-left px-64 py-48 relative z-20 content">
       <slot name="content" />
     </article>
   </section>
@@ -41,9 +41,6 @@ export default {
       @apply mt-8;
     }
   }
-
-  p {
-  }
 }
 
 .section {
@@ -52,6 +49,7 @@ export default {
 
 .decor::before,
 .decor::after {
+  @apply z-10;
   content: '';
   display: block;
   width: 100%;
@@ -62,14 +60,14 @@ export default {
 }
 
 .decor::before {
-  opacity: 0.1;
-  background-color: theme('colors.blue.400');
+  opacity: 1;
+  background-color: theme('colors.green.300');
   transform: skewY(2deg);
 }
 
 .decor::after {
-  opacity: 0.1;
-  background-color: theme('colors.green.400');
+  opacity: 1;
+  background-color: theme('colors.gray.100');
   transform: skewY(6deg);
 }
 </style>
