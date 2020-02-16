@@ -29,7 +29,7 @@
       <a href="cv-tibor-zombory.pdf">
         CV
       </a>
-      <i class="fa fa-download ml-2" aria-hidden="true"></i>
+      <i class="fa fa-chevron-right ml-2" aria-hidden="true"></i>
     </button>
   </section>
 </template>
