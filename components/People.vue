@@ -14,9 +14,9 @@
           <li class="person">
             <base-person
               :contacts="[
-                { url: 'https://getify.com/', iconClass: 'fa-globe' },
-                { url: 'https://github.com/getify', iconClass: 'fa-github' },
-                { url: 'mail:getify@gmail.com', iconClass: 'fa-envelope' }
+                { url: 'https://getify.com/', type: 'globe' },
+                { url: 'https://github.com/getify', type: 'github' },
+                { url: 'mail:getify@gmail.com', type: 'mail' }
               ]"
             >
               <template slot="header">
@@ -36,9 +36,9 @@
               :contacts="[
                 {
                   url: 'https://github.com/chrisvfritz',
-                  iconClass: 'fa-github'
+                  type: 'github'
                 },
-                { url: 'mail:chrisvfritz@gmail.com', iconClass: 'fa-envelope' }
+                { url: 'mail:chrisvfritz@gmail.com', type: 'mail' }
               ]"
             >
               <template slot="header">
@@ -66,11 +66,11 @@
               :contacts="[
                 {
                   url: 'https://markus.oberlehner.net/',
-                  iconClass: 'fa-globe'
+                  type: 'globe'
                 },
                 {
                   url: 'https://github.com/maoberlehner',
-                  iconClass: 'fa-github'
+                  type: 'github'
                 }
               ]"
             >
@@ -92,12 +92,12 @@
               :contacts="[
                 {
                   url: 'https://christianheilmann.com/',
-                  iconClass: 'fa-globe'
+                  type: 'globe'
                 },
-                { url: 'http://github.com/codepo8', iconClass: 'fa-github' },
+                { url: 'http://github.com/codepo8', type: 'github' },
                 {
                   url: 'mail:chris@christianheilmann.com',
-                  iconClass: 'fa-envelope'
+                  type: 'mail'
                 }
               ]"
             >
@@ -126,15 +126,15 @@
           <li class="person">
             <base-person
               :contacts="[
-                { url: 'http://puzser.hu/', iconClass: 'fa-globe' },
+                { url: 'http://puzser.hu/', type: 'globe' },
                 {
                   url:
                     'https://www.youtube.com/channel/UC7ivXUYaRoZb5WDLKksETUA',
-                  iconClass: 'fa-youtube'
+                  type: 'youtube'
                 },
                 {
                   url: 'https://www.facebook.com/Robert.Puzser',
-                  iconClass: 'fa-facebook'
+                  type: 'facebook'
                 }
               ]"
             >
@@ -158,11 +158,11 @@
               :contacts="[
                 {
                   url: 'https://www.jordanbpeterson.com/',
-                  iconClass: 'fa-globe'
+                  type: 'globe'
                 },
                 {
                   url: 'https://www.youtube.com/user/JordanPetersonVideos',
-                  iconClass: 'fa-youtube'
+                  type: 'youtube'
                 }
               ]"
             >
@@ -203,8 +203,7 @@ export default {
 
 <style lang="less">
 .header {
-  @apply text-2xl shadow p-2 pl-4 relative;
-  background-color: theme('colors.teal.800');
+  @apply text-2xl p-2 pl-4 relative;
 
   &::before,
   &::after {
@@ -239,15 +238,10 @@ export default {
 
 .person::before,
 .person::after {
-  display: block;
   content: '';
-  position: absolute;
   width: 20px;
-  height: 100%;
   top: 0;
   right: 0;
-  background-color: theme('colors.teal.800');
-  background-color: theme('colors.gray.100');
-  @apply shadow-inner;
+  @apply block shadow-inner bg-gray-100 h-full absolute;
 }
 </style>

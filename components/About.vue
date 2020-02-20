@@ -12,56 +12,58 @@
         class="contact-list__item w-12 h-12 rounded-full bg-gray-100"
       >
         <a :href="contact.url">
-          <div class="w-full h-full rounded-full">
-            <i
-              class="fa m-auto text-2xl align-middle"
-              :class="contact.iconClass"
-              aria-hidden="true"
-            >
-            </i>
+          <div
+            class="w-full h-full rounded-full flex justify-center items-center"
+          >
+            <icon :type="contact.type" />
           </div>
         </a>
       </li>
     </ul>
     <button
-      class="border-2 rounded-lg border-yellow-500 px-6 py-2 m-12 absolute bottom-0 right-0 text-2xl text-yellow-500 hover:text-yellow-300 hover:border-yellow-300 transition-colors duration-150 ease-in"
+      class="border-2 rounded-lg border-yellow-500 px-6 py-2 m-12 absolute flex items-center bottom-0 right-0 text-2xl text-yellow-500 hover:text-yellow-300 hover:border-yellow-300 transition-colors duration-150 ease-in"
     >
       <a href="cv-tibor-zombory.pdf">
         CV
       </a>
-      <i class="fa fa-chevron-right ml-2" aria-hidden="true"></i>
+      <icon type="chevronRight" />
     </button>
   </section>
 </template>
 
 <script>
+import Icon from '@/components/Icon'
+
 export default {
+  components: {
+    Icon
+  },
   created() {
     this.$_contacts = [
       {
         url:
           'https://www.google.com/maps/place/Szeged/data=!4m2!3m1!1s0x474487e22bcce54b:0x400c4290c1e1190?sa=X&ved=2ahUKEwiN9diP4cvnAhVFlYsKHSqWDWkQ8gEwFXoECBIQBA',
-        iconClass: 'fa-map-marker'
+        type: 'location'
       },
       {
         url: 'tel:+36309935393',
-        iconClass: 'fa-mobile'
+        type: 'phone'
       },
       {
         url: 'https://elasticmind.design',
-        iconClass: 'fa-globe'
+        type: 'globe'
       },
       {
         url: 'https://github.com/elasticmind',
-        iconClass: 'fa-github'
+        type: 'github'
       },
       {
         url: 'https://linkedin.com/in/elasticmind',
-        iconClass: 'fa-linkedin-square'
+        type: 'linkedin'
       },
       {
         url: 'mailto:contact@elasticmind.design',
-        iconClass: 'fa-envelope'
+        type: 'mail'
       }
     ]
   }
