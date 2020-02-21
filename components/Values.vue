@@ -141,4 +141,18 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="less">
+.value {
+  position: relative;
+  @apply pl-4 pr-16 mt-4;
+}
+
+.value::before,
+.value::after {
+  content: '';
+  width: 20px;
+  top: 0;
+  right: 0;
+  @apply block shadow-inner bg-gray-100 h-full absolute;
+}
+</style>
