@@ -3,7 +3,7 @@
     <img
       src="@/assets/images/tibor-zombory-elasticmind-profile-picture.jpg"
       alt="tibor-zombory-elasticmind-profile-picture"
-      class="w-1/6 rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+      class="profile-image"
     />
     <ul class="list-none">
       <li
@@ -71,22 +71,41 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@contact-ring-radius: 300px;
+.profile-image {
+  @apply w-1/6 rounded-full absolute left-1/2 top-1/2 z-10;
+  transform: translate(-50%, -50%);
+}
+
+@contact-ring-radius: 450px;
 @contact-count: 6;
 
 .contact-list__item {
   position: absolute;
   left: 50%;
   top: 50%;
+  animation-duration: 0.5s;
+  animation-play-state: running;
+  animation-delay: 0;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 
   each(range(@contact-count), {
     &:nth-child(@{value}) {
-      transform: translate(-50% + @contact-ring-radius * cos(2 * pi() * (@value - 1) / @contact-count), -50% + @contact-ring-radius * sin(2 * pi() * (@value - 1) / @contact-count));
+      transform: translate(-50%, -50%);
+      animation-name: ~"animation-@{value}";
+      animation-delay: 1s + (0.1s * @value);
+    }
+
+    @keyframes ~"animation-@{value}" {
+      0% {
+        transform: translate(-50%, -50%);
+      }
+
+      100% {
+        transform: translate(-50% + @contact-ring-radius * cos(2 * pi() * (@value - 1) / @contact-count), -50% + @contact-ring-radius * sin(2 * pi() * (@value - 1) / @contact-count));
+      }
     }
   });
-
-  &:hover {
-    box-shadow: 0 0 10px black;
-  }
 }
 </style>
