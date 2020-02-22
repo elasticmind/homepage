@@ -1,5 +1,6 @@
 <template>
-  <section class="h-screen w-screen relateive bg-green-900">
+  <section class="about">
+    <div class="absolute w-full h-full"></div>
     <img
       src="@/assets/images/tibor-zombory-elasticmind-profile-picture.jpg"
       alt="tibor-zombory-elasticmind-profile-picture"
@@ -20,14 +21,24 @@
         </a>
       </li>
     </ul>
-    <button
-      class="border-2 rounded-lg border-yellow-500 px-6 py-2 m-12 absolute flex items-center bottom-0 right-0 text-2xl text-yellow-500 hover:text-yellow-300 hover:border-yellow-300 transition-colors duration-150 ease-in"
+    <article
+      class="absolute w-full bottom-0 p-12 mb-8 text-center text-gray-100"
     >
-      <a href="cv-tibor-zombory.pdf">
-        CV
-      </a>
-      <icon type="chevronRight" />
-    </button>
+      <div
+        class="bg-gray-900 h-full w-full absolute top-0 left-0 opacity-50"
+      ></div>
+      <p class="relative z-10">
+        Hi! I am Tibor Zombory, a software engineer from Szeged, Hungary.
+      </p>
+      <button
+        class="border-2 rounded-lg border-yellow-500 px-6 py-2 m-12 absolute flex items-center bottom-0 right-0 text-2xl text-yellow-500 hover:text-yellow-300 hover:border-yellow-300 transition-colors duration-150 ease-in"
+      >
+        <a href="cv-tibor-zombory.pdf">
+          CV
+        </a>
+        <icon type="chevronRight" />
+      </button>
+    </article>
   </section>
 </template>
 
@@ -71,8 +82,15 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.about {
+  @apply relative h-screen w-screen bg-green-900;
+  background-color: #241721;
+}
+
 .profile-image {
-  @apply w-1/6 rounded-full absolute left-1/2 top-1/2 z-10;
+  @apply w-1/6 rounded-full absolute z-10;
+  top: 24rem;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -82,7 +100,7 @@ export default {
 .contact-list__item {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 24rem;
   animation-duration: 0.5s;
   animation-play-state: running;
   animation-delay: 0;
