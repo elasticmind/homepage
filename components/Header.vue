@@ -1,11 +1,11 @@
 <template>
-  <header class="w-screen bg-gray-600 fixed z-50 flex flex-row">
-    <h1 class="text-left text-4xl">
+  <header class="w-screen bg-gray-900 fixed z-50 flex flex-row">
+    <h1 class="pl-4 text-left text-teal-100 text-4xl">
       <a href="/">
         elasticmind.design
       </a>
     </h1>
-    <app-nav />
+    <app-nav class="flex-auto text-gray-100" />
   </header>
 </template>
 
