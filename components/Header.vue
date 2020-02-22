@@ -6,15 +6,25 @@
       </a>
     </h1>
     <app-nav class="flex-auto text-gray-100" />
+    <button
+      class="rounded-lg bg-yellow-500 px-6 m-2 mr-6 flex items-center text-xl text-gray-800"
+    >
+      <a href="cv-tibor-zombory.pdf">
+        CV
+      </a>
+      <icon type="chevronRight" />
+    </button>
   </header>
 </template>
 
 <script>
 import Nav from '@/components/Nav'
+import Icon from '@/components/Icon'
 
 export default {
   components: {
-    AppNav: Nav
+    AppNav: Nav,
+    Icon
   }
 }
 </script>

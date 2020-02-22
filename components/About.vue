@@ -30,14 +30,6 @@
       <p class="relative z-10">
         Hi! I am Tibor Zombory, a software engineer from Szeged, Hungary.
       </p>
-      <button
-        class="border-2 rounded-lg border-yellow-500 px-6 py-2 m-12 absolute flex items-center bottom-0 right-0 text-2xl text-yellow-500 hover:text-yellow-300 hover:border-yellow-300 transition-colors duration-150 ease-in"
-      >
-        <a href="cv-tibor-zombory.pdf">
-          CV
-        </a>
-        <icon type="chevronRight" />
-      </button>
     </article>
   </section>
 </template>
