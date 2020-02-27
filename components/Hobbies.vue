@@ -19,7 +19,7 @@
                 <a href="mailto:contact@elasticmind.design">heads up</a>! :)
               </p>
             </article>
-            <aside class="image cat" />
+            <aside class="image coffee" />
           </div>
         </template>
       </headered-section>
@@ -60,7 +60,7 @@
                 green lifestyle and encourage my environment to do the same.
               </p>
             </article>
-            <aside class="image cat" />
+            <aside class="image nature" />
           </div>
         </template>
       </headered-section>
@@ -86,7 +86,7 @@
                 if not for work, then for reflections.
               </p>
             </article>
-            <aside class="image cat" />
+            <aside class="image music" />
           </div>
         </template>
       </headered-section>
@@ -109,13 +109,29 @@ export default {
 <style lang="less">
 .image {
   @apply w-48 bg-cover;
-  flex: 0 0 400px;
+  flex: 0 0 300px;
   height: 400px;
   clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .cat {
-  background-image: url('~assets/images/maine-coon-1.jpg');
+  background-image: url('~assets/images/cat.jpg');
   background-position: 80% 0;
+}
+
+.coffee {
+  background-image: url('~assets/images/coffee.jpg');
+  background-position: 55% 0;
+}
+
+.music {
+  background-image: url('~assets/images/music.jpg');
+  background-size: 130%;
+  background-position: 0 75%;
+}
+
+.nature {
+  background-image: url('~assets/images/nature.jpg');
+  background-position: 0 60%;
 }
 </style>
