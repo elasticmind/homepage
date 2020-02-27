@@ -10,7 +10,7 @@
       <li
         v-for="contact in $_contacts"
         :key="contact.url"
-        class="contact-list__item w-12 h-12 rounded-full bg-gray-100"
+        class="contact-list__item"
       >
         <a :href="contact.url">
           <div
@@ -27,9 +27,14 @@
       <div
         class="bg-gray-900 h-full w-full absolute top-0 left-0 opacity-50"
       ></div>
-      <p class="relative z-10">
-        Hi! I am Tibor Zombory, a software engineer from Szeged, Hungary.
-      </p>
+      <h1 class="relative z-10 text-6xl font-sans font-hairline">
+        Tibor Zombory
+      </h1>
+      <h2
+        class="relative z-10 text-2xl text-gray-200 font-roboto-slab font-semibold"
+      >
+        Javascript developer
+      </h2>
     </article>
   </section>
 </template>
@@ -80,7 +85,7 @@ export default {
 }
 
 .profile-image {
-  @apply w-1/6 rounded-full absolute z-10;
+  @apply w-1/6 rounded-full absolute z-10 border-2 p-1;
   top: 24rem;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -90,8 +95,7 @@ export default {
 @contact-count: 6;
 
 .contact-list__item {
-  position: absolute;
-  left: 50%;
+  @apply absolute left-1/2 w-12 h-12 rounded-full text-gray-200;
   top: 24rem;
   animation-duration: 0.5s;
   animation-play-state: running;
@@ -117,5 +121,10 @@ export default {
       }
     }
   });
+
+  &:hover {
+    transform: scale(2);
+    color: theme('colors.gray.100');
+  }
 }
 </style>

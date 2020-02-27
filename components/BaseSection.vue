@@ -9,7 +9,7 @@
   >
     <header class="relative z-20">
       <h1
-        class="inline-block text-right text-4xl p-4 pl-96 pr-8 shadow-inner"
+        class="inline-block text-right text-4xl w-112 p-4 pr-8 shadow-inner font-sans font-normal"
         :class="[
           primary ? 'bg-teal-900 text-gray-100' : 'bg-gray-100 text-gray-900'
         ]"
