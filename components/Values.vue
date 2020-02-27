@@ -1,16 +1,14 @@
 <template>
   <base-section v-bind="$attrs">
-    <template slot="header">
+    <template #header>
       Values
     </template>
-    <template slot="content">
-      <section>
-        <section class="value">
-          <header>
-            <h2>
-              Reflectivity
-            </h2>
-          </header>
+    <template #content>
+      <headered-section :primary="!$attrs.primary">
+        <template #header>
+          Reflectivity
+        </template>
+        <template #description>
           <p>
             One of the most important obligations of being an intellectual is
             being critical. Regardless of the subject, the willingness to
@@ -30,13 +28,13 @@
             Constantly seek criticism. A well thought out critique of whatever
             you’re doing is as valuable as gold.
           </blockquote>
-        </section>
-        <section class="value">
-          <header>
-            <h2>
-              Transparency
-            </h2>
-          </header>
+        </template>
+      </headered-section>
+      <headered-section :primary="!$attrs.primary">
+        <template #header>
+          Transparency
+        </template>
+        <template #description>
           <p>
             I believe it's extremely important to know where each party stands
             in a certain situation, be that a working relationship with a
@@ -49,13 +47,13 @@
             mean that one should be inconsiderate, insensitive or arrogant, but
             it does mean being true even when it hurts.
           </p>
-        </section>
-        <section class="value">
-          <header>
-            <h2>
-              Reliability
-            </h2>
-          </header>
+        </template>
+      </headered-section>
+      <headered-section :primary="!$attrs.primary">
+        <template #header>
+          Reliability
+        </template>
+        <template #description>
           <p>
             A century ago a scientist like Einstein had to come along and do a
             lifetime of research to deserve the attributive 'brilliant'.
@@ -73,13 +71,13 @@
             case, I make sure to inform them as soon as possible. That is true
             of how I work as well, regarding unforseen complications.
           </p>
-        </section>
-        <section class="value">
-          <header>
-            <h2>
-              Ambitiousness
-            </h2>
-          </header>
+        </template>
+      </headered-section>
+      <headered-section :primary="!$attrs.primary">
+        <template #header>
+          Ambitiousness
+        </template>
+        <template #description>
           <p>
             Whatever you do, you should do it with all your heart. You should be
             relentless in searching for different ways to flourish in that
@@ -97,13 +95,13 @@
             morning you look forward to being alive, you're excited about the
             future.
           </blockquote>
-        </section>
-        <section class="value">
-          <header>
-            <h2>
-              Adaptibility
-            </h2>
-          </header>
+        </template>
+      </headered-section>
+      <headered-section :primary="!$attrs.primary">
+        <template #header>
+          Adaptibility
+        </template>
+        <template #description>
           <p>
             To quote Dr. Robert Ford from Westworld:
           </p>
@@ -125,34 +123,22 @@
             as well as I can by questioning even foundational things and I
             quickly adapt to environmental changes.
           </p>
-        </section>
-      </section>
+        </template>
+      </headered-section>
     </template>
   </base-section>
 </template>
 
 <script>
 import BaseSection from '~/components/BaseSection'
+import HeaderedSection from '~/components/HeaderedSection'
 
 export default {
   components: {
-    BaseSection
+    BaseSection,
+    HeaderedSection
   }
 }
 </script>
 
-<style lang="less">
-.value {
-  position: relative;
-  @apply pl-4 pr-16 mt-4;
-}
-
-.value::before,
-.value::after {
-  content: '';
-  width: 20px;
-  top: 0;
-  right: 0;
-  @apply block shadow-inner bg-gray-100 h-full absolute;
-}
-</style>
+<style lang="less"></style>

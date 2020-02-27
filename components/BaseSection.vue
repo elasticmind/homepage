@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-screen pt-12 section"
+    class="w-screen pt-12 relative"
     :class="[
       primary
         ? 'bg-teal-800 text-gray-900 section-decor--primary'
@@ -17,7 +17,7 @@
         <slot name="header" />
       </h1>
     </header>
-    <article class="text-left px-96 pb-48 pt-24 relative z-20 content">
+    <article class="text-left px-112 pb-48 pt-24 relative z-20 content">
       <slot name="content" />
     </article>
   </section>
@@ -43,10 +43,6 @@ export default {
       @apply mt-8;
     }
   }
-}
-
-.section {
-  position: relative;
 }
 
 .section-decor--primary::before,
