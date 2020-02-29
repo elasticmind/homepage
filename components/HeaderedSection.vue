@@ -41,7 +41,7 @@ export default {
 .decor--secondary::before,
 .decor--secondary::after {
   content: '';
-  width: 20px;
+  width: 10px;
   top: 0;
   right: 0;
   @apply block shadow-inner h-full absolute;
