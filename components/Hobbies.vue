@@ -12,10 +12,11 @@
           <div class="flex">
             <article>
               <p>
-                I'm a coffee lover, and a proud owner of a Gaggia Classic Pro
-                machine. I regularly have friends over for coffee and
-                technical/personal exchange of views. Were you ever in the area
-                and would like to drop by, just give me a
+                I'm a coffee lover and a proud owner of a Gaggia Classic Pro and
+                a Eureka Mignon Specialitá. It's all about that speciality
+                coffee shop quality and experience. I regularly have friends
+                over for coffee and technical/personal exchange of views. Were
+                you ever in the area and would like to drop by, just give me a
                 <a href="mailto:contact@elasticmind.design">heads up</a>! :)
               </p>
             </article>
@@ -79,7 +80,7 @@
               </blockquote>
               <p>
                 The biggest question mark in the topic of art for me has always
-                been music. In the past I played the piano, the guitar and the
+                been music. In the past, I played the piano, the guitar and the
                 drums for varying amounts of time. I listen to many different
                 genres, most notably classical, modern symphonic, indie, IDM and
                 ambient. For me, music has been a focusing tool for many years:

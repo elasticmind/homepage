@@ -57,7 +57,7 @@
         </template>
         <template #description>
           <p>
-            Markus Oberlehner is a Web Developer, specializing in Vue. He's a
+            Markus Oberlehner is a Web Developer, specializing in Vue. He's
             passionate about Open Source and he's the creator of the
             vuex-map-fields, vue-lazy-hydration, and node-sass-magic-importer
             packages.
@@ -85,7 +85,7 @@
             Chris is a technical and open web evangelist. "Maker of web things.
             Ponderer of new technology. Lover of simplicity." &ndash; as he puts
             it. He's a veteran web developer, publisher, speaker and conference
-            organiser.
+            organizer.
           </p>
           <person-contacts
             :contacts="[
@@ -109,7 +109,7 @@
         <template #description>
           <p>
             Róbert Puzsér is a Hungarian publicist, anchorman, editor, and
-            social critic. He is one of the most divisive intellectual in the
+            social critic. He is one of the most divisive intellectuals in the
             Hungarian cultural space. He has also ran for the position of Lord
             Mayor of Budapest in 2019, with a modern and green political program
             to steer Budapest towards a more sustainable, more human-friendly
