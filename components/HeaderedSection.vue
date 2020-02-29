@@ -3,7 +3,10 @@
     class="section"
     :class="primary ? 'decor--primary' : 'decor--secondary'"
   >
-    <header class="section--header">
+    <header
+      class="section--header"
+      :class="primary ? 'text-secondary' : 'text-primary'"
+    >
       <h2 class="text-xl mb-2">
         <slot name="header" />
       </h2>
@@ -46,12 +49,12 @@ export default {
 
 .decor--primary::before,
 .decor--primary::after {
-  @apply bg-red-700;
+  @apply bg-secondary;
 }
 
 .decor--secondary::before,
 .decor--secondary::after {
-  @apply bg-teal-800;
+  @apply bg-primary-dark;
 }
 
 .section--header {

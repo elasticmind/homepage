@@ -1,5 +1,5 @@
 <template>
-  <section class="about">
+  <section class="about z-20">
     <div class="absolute w-full h-full"></div>
     <img
       src="@/assets/images/tibor-zombory-elasticmind-profile-picture.jpg"
@@ -21,17 +21,15 @@
         </a>
       </li>
     </ul>
-    <article
-      class="absolute w-full bottom-0 p-12 mb-8 text-center text-gray-100"
-    >
+    <article class="absolute w-full bottom-0 p-12 mb-8 text-center text-light">
       <div
-        class="bg-gray-900 h-full w-full absolute top-0 left-0 opacity-50"
+        class="bg-primary-dark h-full w-full absolute top-0 left-0 opacity-25"
       ></div>
       <h1 class="relative z-10 text-6xl font-sans font-hairline">
         Tibor Zombory
       </h1>
       <h2
-        class="relative z-10 text-2xl text-gray-200 font-roboto-slab font-semibold"
+        class="relative z-10 text-2xl text-primary-light font-roboto-slab font-semibold"
       >
         Javascript developer
       </h2>
@@ -80,8 +78,7 @@ export default {
 
 <style lang="less" scoped>
 .about {
-  @apply relative h-screen w-screen bg-green-900;
-  background-color: #241721;
+  @apply relative h-screen w-screen bg-dark;
 }
 
 .profile-image {
@@ -95,7 +92,7 @@ export default {
 @contact-count: 6;
 
 .contact-list__item {
-  @apply absolute left-1/2 w-12 h-12 rounded-full text-gray-200;
+  @apply absolute left-1/2 w-12 h-12 rounded-full text-light;
   top: 24rem;
   animation-duration: 0.5s;
   animation-play-state: running;
@@ -104,7 +101,7 @@ export default {
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 
-  each(range(@contact-count), {
+  each(range(0, @contact-count), {
     &:nth-child(@{value}) {
       transform: translate(-50%, -50%);
       animation-name: ~"animation-@{value}";
@@ -117,14 +114,9 @@ export default {
       }
 
       100% {
-        transform: translate(-50% + @contact-ring-radius * cos(2 * pi() * (@value - 1) / @contact-count), -50% + @contact-ring-radius * sin(2 * pi() * (@value - 1) / @contact-count));
+        transform: translate(-50% + @contact-ring-radius * cos(2 * pi() * (@value - 2) / @contact-count), -50% + @contact-ring-radius * sin(2 * pi() * (@value - 2) / @contact-count));
       }
     }
   });
-
-  &:hover {
-    transform: scale(2);
-    color: theme('colors.gray.100');
-  }
 }
 </style>

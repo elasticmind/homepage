@@ -2,10 +2,10 @@
   <div class="container">
     <app-header />
     <about id="about" />
-    <values id="values" />
-    <network id="network" :primary="true" />
-    <people id="people" />
-    <hobbies id="hobbies" :primary="true" />
+    <values id="values" :primary="true" />
+    <network id="network" />
+    <people id="people" :primary="true" />
+    <hobbies id="hobbies" />
     <app-footer />
   </div>
 </template>

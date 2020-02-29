@@ -23,6 +23,16 @@ module.exports = {
       sans: ['Work Sans', 'sans-serif']
     },
     extend: {
+      colors: {
+        light: '#f6feff',
+        dark: '#0e111a',
+        primary: '#89a3ba',
+        'primary-light': '#91adc2',
+        'primary-dark': '#3b4b58',
+        secondary: '#727b6a',
+        'secondary-light': '#7a8b7b',
+        'secondary-dark': '#50574f'
+      },
       spacing: {
         '112': '28rem'
       },
