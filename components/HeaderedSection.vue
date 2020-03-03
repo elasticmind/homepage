@@ -60,4 +60,13 @@ export default {
 .section--header {
   @apply font-roboto-slab font-semibold tracking-widest;
 }
+
+blockquote {
+  @apply relative py-12 px-16 italic text-center;
+}
+
+blockquote::before {
+  content: '\201C';
+  @apply text-6xl absolute left-0 top-0 ml-2 font-sans opacity-25;
+}
 </style>
