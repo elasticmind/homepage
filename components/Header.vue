@@ -1,5 +1,5 @@
 <template>
-  <header class="w-screen bg-dark fixed z-50 flex flex-row shadow">
+  <header class="w-full bg-dark fixed z-50 flex flex-row shadow">
     <h1 class="pl-4 text-left text-primary-dark text-4xl font-roboto-slab">
       <a href="/">
         elasticmind.design

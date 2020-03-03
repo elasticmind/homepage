@@ -1,5 +1,7 @@
 <template>
-  <footer class="w-screen bg-dark text-primary-dark py-12 relative z-20">
+  <footer
+    class="w-full bg-dark text-primary-dark py-12 relative z-20 shadow-inner"
+  >
     <app-nav />
     <hr class="w-1/2 m-auto mt-4 border-primary" />
     <p class="text-center mt-8 opacity-50">

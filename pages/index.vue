@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="w-full">
     <app-header />
     <about id="about" />
     <values id="values" :primary="true" />
@@ -33,16 +33,6 @@ export default {
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;

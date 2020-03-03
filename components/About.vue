@@ -78,7 +78,7 @@ export default {
 
 <style lang="less" scoped>
 .about {
-  @apply relative h-screen w-screen bg-dark;
+  @apply relative h-screen w-full bg-dark;
 }
 
 .profile-image {

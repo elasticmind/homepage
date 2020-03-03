@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-screen pt-12 relative"
+    class="w-full pt-12 relative"
     :class="[
       primary
         ? 'bg-dark text-dark section-decor--primary'
