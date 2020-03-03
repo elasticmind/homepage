@@ -25,7 +25,9 @@ module.exports = {
     extend: {
       colors: {
         light: '#f6feff',
+        'dark-light': '#212531',
         dark: '#0e111a',
+        'dark-dark': '#060709',
         primary: '#89a3ba',
         'primary-light': '#91adc2',
         'primary-dark': '#3b4b58',
@@ -33,7 +35,7 @@ module.exports = {
         'secondary-light': '#7a8b7b',
         'secondary-dark': '#50574f'
       },
-      spacing: {
+      width: {
         '112': '28rem'
       },
       padding: {

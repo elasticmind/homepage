@@ -1,19 +1,29 @@
 <template>
   <nav>
     <ul
-      class="list-none w-1/2 h-full m-auto flex flex-row items-center justify-between"
+      class="list-none h-full m-auto flex flex-row items-center justify-end"
+      :class="navigationItemListClass"
     >
-      <li :class="navigationItemClass">
-        <a class="h-full w-full" href="#about">About</a>
+      <li class="h-full" :class="navigationItemClass">
+        <a class="h-full w-full flex items-center px-6" href="#values">
+          Values
+        </a>
       </li>
-      <li :class="navigationItemClass"><a href="#values">Values</a></li>
-      <li :class="navigationItemClass">
-        <a href="#network">People I love working with</a>
+      <li class="h-full ml-2" :class="navigationItemClass">
+        <a class="h-full w-full flex items-center px-6" href="#network">
+          Network
+        </a>
       </li>
-      <li :class="navigationItemClass">
-        <a href="#people">People worth following</a>
+      <li class="h-full ml-2" :class="navigationItemClass">
+        <a class="h-full w-full flex items-center px-6" href="#people">
+          People
+        </a>
       </li>
-      <li :class="navigationItemClass"><a href="#hobbies">Hobbies</a></li>
+      <li class="h-full ml-2" :class="navigationItemClass">
+        <a class="h-full w-full flex items-center px-6" href="#hobbies">
+          Hobbies
+        </a>
+      </li>
     </ul>
   </nav>
 </template>
@@ -21,6 +31,10 @@
 <script>
 export default {
   props: {
+    navigationItemListClass: {
+      type: String,
+      default: ''
+    },
     navigationItemClass: {
       type: String,
       default: ''

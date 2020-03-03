@@ -7,27 +7,17 @@
     </h1>
     <app-nav
       class="flex-auto text-light"
-      navigation-item-class="font-semibold"
+      navigation-item-class="font-roboto-slab tracking-widest font-semibold hover:text-primary hover:bg-dark-dark"
     />
-    <button
-      class="rounded-lg border-2 border-secondary-light px-6 m-2 mr-6 flex items-center text-xl text-secondary-light"
-    >
-      <a href="cv-tibor-zombory.pdf">
-        CV
-      </a>
-      <icon type="chevronRight" />
-    </button>
   </header>
 </template>
 
 <script>
 import Nav from '@/components/Nav'
-import Icon from '@/components/Icon'
 
 export default {
   components: {
-    AppNav: Nav,
-    Icon
+    AppNav: Nav
   }
 }
 </script>

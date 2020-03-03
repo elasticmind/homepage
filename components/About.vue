@@ -33,6 +33,13 @@
       >
         Javascript developer
       </h2>
+      <a
+        href="cv-tibor-zombory.pdf"
+        class="rounded-lg border-2 flex items-center border-secondary-light px-6 fixed right-0 bottom-0 mb-12 mr-4 text-xl text-secondary-light"
+      >
+        CV
+        <icon class="inline-block" type="chevronRight" />
+      </a>
     </article>
   </section>
 </template>
