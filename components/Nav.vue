@@ -5,22 +5,22 @@
       :class="navigationItemListClass"
     >
       <li class="h-full" :class="navigationItemClass">
-        <a class="h-full w-full flex items-center px-6" href="#values">
+        <a class="h-full w-full flex items-center px-4" href="#values">
           Values
         </a>
       </li>
       <li class="h-full ml-2" :class="navigationItemClass">
-        <a class="h-full w-full flex items-center px-6" href="#network">
+        <a class="h-full w-full flex items-center px-4" href="#network">
           Network
         </a>
       </li>
       <li class="h-full ml-2" :class="navigationItemClass">
-        <a class="h-full w-full flex items-center px-6" href="#people">
+        <a class="h-full w-full flex items-center px-4" href="#people">
           People
         </a>
       </li>
       <li class="h-full ml-2" :class="navigationItemClass">
-        <a class="h-full w-full flex items-center px-6" href="#hobbies">
+        <a class="h-full w-full flex items-center px-4" href="#hobbies">
           Hobbies
         </a>
       </li>

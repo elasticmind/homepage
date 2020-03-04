@@ -21,11 +21,13 @@
         </a>
       </li>
     </ul>
-    <article class="absolute w-full bottom-0 p-12 mb-8 text-center text-light">
+    <article
+      class="absolute w-full bottom-0 p-4 md:p-12 mb-8 text-center text-light"
+    >
       <div
         class="bg-primary-dark h-full w-full absolute top-0 left-0 opacity-25"
       ></div>
-      <h1 class="relative z-10 text-6xl font-sans font-hairline">
+      <h1 class="relative z-10 text-5xl md:text-6xl font-sans font-hairline">
         Tibor Zombory
       </h1>
       <h2
@@ -35,7 +37,7 @@
       </h2>
       <a
         href="cv-tibor-zombory.pdf"
-        class="rounded-lg border-2 flex items-center border-secondary-light px-6 fixed right-0 bottom-0 mb-12 mr-4 text-xl text-secondary-light"
+        class="rounded-lg border-2 flex items-center border-secondary-light pl-2 md:px-6 fixed right-0 bottom-0 mb-12 mr-2 md:mr-4 text-xl text-secondary-light z-30"
       >
         CV
         <icon class="inline-block" type="chevronRight" />
@@ -83,24 +85,36 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 .about {
   @apply relative h-screen w-full bg-dark;
 }
 
+:root {
+  --profile-image-center-y: 24rem;
+}
+
+@screen md {
+  :root {
+    --profile-image-center-y: 20rem;
+    --contact-ring-radius: 450px;
+  }
+}
+
 .profile-image {
-  @apply w-1/6 rounded-full absolute z-10 border-2 p-1;
-  top: 24rem;
+  @apply rounded-full absolute z-10 border-2 p-1;
+  width: 16rem;
+  top: var(--profile-image-center-y);
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-@contact-ring-radius: 450px;
+@contact-ring-radius: 350px;
 @contact-count: 6;
 
 .contact-list__item {
   @apply absolute left-1/2 w-12 h-12 rounded-full text-light;
-  top: 24rem;
+  top: var(--profile-image-center-y);
   animation-duration: 0.5s;
   animation-play-state: running;
   animation-delay: 0;
@@ -121,7 +135,7 @@ export default {
       }
 
       100% {
-        transform: translate(-50% + @contact-ring-radius * cos(2 * pi() * (@value - 2) / @contact-count), -50% + @contact-ring-radius * sin(2 * pi() * (@value - 2) / @contact-count));
+        transform: translate(-50% + @contact-ring-radius * cos(2 * pi() * (@value - 5) / @contact-count), -50% + @contact-ring-radius * sin(2 * pi() * (@value - 5) / @contact-count));
       }
     }
   });

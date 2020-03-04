@@ -40,12 +40,16 @@ module.exports = {
       },
       padding: {
         '112': '28rem'
+      },
+      maxWidth: {
+        '8xl': '96rem'
       }
     }
   },
   variants: {
-    margin: ['hover'],
-    padding: ['hover'],
+    textAlign: ['responsive', 'hover'],
+    margin: ['responsive', 'hover'],
+    padding: ['responsive', 'hover'],
     borderColor: ['hover'],
     borderWidth: ['hover']
   },

@@ -7,7 +7,7 @@
         : 'bg-light text-light section-decor--secondary'
     ]"
   >
-    <header class="relative z-20">
+    <header class="relative z-40">
       <h1
         class="inline-block text-right text-4xl w-112 p-4 pr-8 shadow-inner font-sans font-normal"
         :class="[primary ? 'bg-dark text-light' : 'bg-light text-dark']"
@@ -15,7 +15,9 @@
         <slot name="header" />
       </h1>
     </header>
-    <article class="text-left px-112 pb-48 pt-24 relative z-20 content">
+    <article
+      class="text-left px-4 sm:px-16 md:px-32 xl:px-64 pb-48 pt-24 relative z-20 content max-w-8xl mx-auto"
+    >
       <slot name="content" />
     </article>
   </section>

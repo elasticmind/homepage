@@ -62,7 +62,7 @@ export default {
 }
 
 blockquote {
-  @apply relative py-12 px-16 italic text-center;
+  @apply relative pt-12 pb-4 px-16 italic text-center;
 }
 
 blockquote::before {

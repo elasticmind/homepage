@@ -9,7 +9,7 @@
           Coffee
         </template>
         <template #description>
-          <div class="flex">
+          <div class="flex flex-col lg:flex-row">
             <article>
               <p>
                 I'm a coffee lover and a proud owner of a Gaggia Classic Pro and
@@ -29,7 +29,7 @@
           Cats
         </template>
         <template #description>
-          <div class="flex">
+          <div class="flex flex-col lg:flex-row">
             <article>
               <p>
                 Although I do not own a cat currently, I adore them. I don't
@@ -51,7 +51,7 @@
           Nature
         </template>
         <template #description>
-          <div class="flex">
+          <div class="flex flex-col lg:flex-row">
             <article>
               <p>
                 I firmly believe that we as a species have lost our way. I love
@@ -70,7 +70,7 @@
           Music
         </template>
         <template #description>
-          <div class="flex">
+          <div class="flex flex-col lg:flex-row">
             <article>
               <p>
                 I once heard a quote in a video, but I do not its author:
@@ -109,10 +109,19 @@ export default {
 
 <style lang="less">
 .image {
-  @apply w-48 bg-cover;
+  @apply w-48 bg-cover self-center mt-8;
   flex: 0 0 300px;
   height: 400px;
   clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+  @media screen and (max-width: theme('screens.lg')) {
+    clip-path: unset;
+  }
+}
+
+@screen lg {
+  .image {
+    @apply mt-0;
+  }
 }
 
 .cat {
