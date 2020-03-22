@@ -116,6 +116,13 @@ export default {
   @apply w-full;
 }
 
+.image {
+  @apply w-48 bg-cover self-center mt-8;
+  flex: 0 0 300px;
+  height: 400px;
+  clip-path: unset;
+}
+
 @screen lg {
   .description-wrapper {
     @apply flex-row;
@@ -126,28 +133,9 @@ export default {
   }
 
   .image {
-    @apply ml-auto;
+    @apply ml-auto mt-0;
     clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
   }
-}
-
-.image {
-  @apply w-48 bg-cover self-center mt-8;
-  flex: 0 0 300px;
-  height: 400px;
-  clip-path: unset;
-}
-
-@screen lg {
-  .image {
-    @apply mt-0;
-  }
-}
-
-.cat {
-  background-image: url('~assets/images/cat.jpg');
-  background-position: 80% 0;
-  height: 300px;
 }
 
 .coffee {
@@ -156,10 +144,9 @@ export default {
   height: 200px;
 }
 
-.music {
-  background-image: url('~assets/images/music.jpg');
-  background-size: 110%;
-  background-position: 0 69%;
+.cat {
+  background-image: url('~assets/images/cat.jpg');
+  background-position: 40% 0;
   height: 300px;
 }
 
@@ -167,5 +154,12 @@ export default {
   background-image: url('~assets/images/nature.jpg');
   background-position: 0 60%;
   height: 200px;
+}
+
+.music {
+  background-image: url('~assets/images/music.jpg');
+  background-size: 110%;
+  background-position: 0 69%;
+  height: 300px;
 }
 </style>

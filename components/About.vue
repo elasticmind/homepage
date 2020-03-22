@@ -32,13 +32,15 @@
         Javascript developer
       </h2>
     </article>
-    <a
-      href="cv-tibor-zombory.pdf"
-      class="absolute rounded-lg border-2 flex items-center border-secondary-light px-4 right-0 bottom-0 mb-2 mr-2 md:mr-4 text-xl text-secondary-light z-30 hover:bg-secondary-light hover:text-light"
-    >
-      CV
-      <icon class="inline-block" type="chevronRight" />
-    </a>
+    <div class="flex">
+      <a
+        href="cv-tibor-zombory.pdf"
+        class="rounded-lg border-2 flex items-center border-secondary-light px-8 py-2 mb-2 mr-2 md:mr-4 ml-auto text-2xl text-secondary-light z-30 hover:bg-secondary-light hover:text-light"
+      >
+        CV
+        <icon class="inline-block" type="chevronRight" />
+      </a>
+    </div>
   </section>
 </template>
 
@@ -110,18 +112,12 @@ export default {
 
 .contact-list {
   @apply w-0 list-none mx-auto;
-  z-index: 100;
-  display: block;
-  position: relative;
-  background-color: red;
-  width:2px;
-  height: 2px;
   margin-top: calc(-1 * var(--contact-ring-vertical-gap));
-  margin-bottom: calc(2.5 * var(--contact-ring-vertical-gap));
+  margin-bottom: calc(2 * var(--contact-ring-vertical-gap));
 }
 
 .contact-list__item {
-  @apply absolute w-12 h-12 rounded-full text-light z-0;
+  @apply absolute w-12 h-12 rounded-full text-light z-0 bg-primary-dark;
   animation-duration: 0.5s;
   animation-play-state: running;
   animation-delay: 0;
