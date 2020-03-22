@@ -73,7 +73,7 @@
           <div class="description-wrapper">
             <article class="description">
               <p>
-                I once heard a quote in a video, but I do not its author:
+                I once heard a quote in a video, but I do not know its author:
               </p>
               <blockquote>
                 All art is a question mark that only you know the answer to.
