@@ -8,9 +8,9 @@
       </a>
     </h1>
     <app-nav
-      class="flex-auto text-light"
+      class="nav"
       navigation-item-class="font-roboto-slab tracking-widest font-semibold py-2 md:py-0 hover:bg-light hover:text-dark"
-      navigation-item-list-class="justify-around md:justify-end"
+      navigation-item-list-class="justify-between"
     />
   </header>
 </template>
@@ -25,4 +25,21 @@ export default {
 }
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+.nav {
+  @apply text-light px-4 w-full ml-0;
+}
+
+@screen sm {
+  .nav {
+    @apply px-16 ml-auto;
+  }
+}
+
+@screen md {
+  .nav {
+    @apply px-0;
+    width: 400px;
+  }
+}
+</style>

@@ -1,26 +1,26 @@
 <template>
   <nav>
     <ul
-      class="list-none h-full m-auto flex flex-row items-center justify-end"
+      class="list-none h-full m-auto flex flex-row items-center"
       :class="navigationItemListClass"
     >
       <li class="h-full" :class="navigationItemClass">
-        <a class="h-full w-full flex items-center px-4" href="#values">
+        <a class="h-full w-full flex items-center px-2" href="#values">
           Values
         </a>
       </li>
-      <li class="h-full ml-2" :class="navigationItemClass">
-        <a class="h-full w-full flex items-center px-4" href="#network">
+      <li class="h-full" :class="navigationItemClass">
+        <a class="h-full w-full flex items-center px-2" href="#network">
           Network
         </a>
       </li>
-      <li class="h-full ml-2" :class="navigationItemClass">
-        <a class="h-full w-full flex items-center px-4" href="#people">
+      <li class="h-full" :class="navigationItemClass">
+        <a class="h-full w-full flex items-center px-2" href="#people">
           People
         </a>
       </li>
-      <li class="h-full ml-2" :class="navigationItemClass">
-        <a class="h-full w-full flex items-center px-4" href="#hobbies">
+      <li class="h-full" :class="navigationItemClass">
+        <a class="h-full w-full flex items-center px-2" href="#hobbies">
           Hobbies
         </a>
       </li>
