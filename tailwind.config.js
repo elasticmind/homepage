@@ -21,16 +21,12 @@ module.exports = {
         sans: ['Work Sans', 'sans-serif']
       },
       colors: {
-        light: '#f6feff',
-        'dark-light': '#212531',
-        dark: '#0e111a',
-        'dark-dark': '#060709',
-        primary: '#89a3ba',
-        'primary-light': '#91adc2',
-        'primary-dark': '#3b4b58',
-        secondary: '#727b6a',
-        'secondary-light': '#7a8b7b',
-        'secondary-dark': '#50574f'
+        light: '#FDFFFC',
+        dark: '#2D2927',
+        'dark-dark': '#14110F',
+        primary: '#0999CC',
+        'primary-light': '#3AC5F5',
+        'primary-dark': '#0E2A34'
       },
       width: {
         '112': '28rem'

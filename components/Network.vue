@@ -4,7 +4,7 @@
       My favorite people
     </template>
     <template #content>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
           Dadache Abdel Hakim
         </template>
@@ -36,9 +36,9 @@
           />
         </template>
       </headered-section>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
-          Balázs Tápai (Tapesz)
+          Balázs Tápai
         </template>
         <template #description>
           <p>

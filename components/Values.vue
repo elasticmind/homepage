@@ -4,7 +4,7 @@
       Values
     </template>
     <template #content>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
           Reflectivity
         </template>
@@ -30,7 +30,7 @@
           </blockquote>
         </template>
       </headered-section>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
           Transparency
         </template>
@@ -49,7 +49,7 @@
           </p>
         </template>
       </headered-section>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
           Reliability
         </template>
@@ -73,7 +73,7 @@
           </p>
         </template>
       </headered-section>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
           Ambitiousness
         </template>
@@ -97,7 +97,7 @@
           </blockquote>
         </template>
       </headered-section>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
           Adaptability
         </template>

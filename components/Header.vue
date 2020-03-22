@@ -9,7 +9,7 @@
     </h1>
     <app-nav
       class="flex-auto text-light"
-      navigation-item-class="font-roboto-slab tracking-widest font-semibold py-2 md:py-0 hover:text-primary hover:bg-dark-dark"
+      navigation-item-class="font-roboto-slab tracking-widest font-semibold py-2 md:py-0 hover:bg-light hover:text-dark"
       navigation-item-list-class="justify-around md:justify-end"
     />
   </header>

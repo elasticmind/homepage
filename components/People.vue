@@ -4,7 +4,7 @@
       People I follow
     </template>
     <template #content>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
           Kyle Simpson (Getify)
         </template>
@@ -23,7 +23,7 @@
           />
         </template>
       </headered-section>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
           Chris Fritz
         </template>
@@ -51,7 +51,7 @@
           />
         </template>
       </headered-section>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
           Markus Oberlehner
         </template>
@@ -76,7 +76,7 @@
           />
         </template>
       </headered-section>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
           Christian Heilmann
         </template>
@@ -102,7 +102,7 @@
           />
         </template>
       </headered-section>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
           Róbert Puzsér
         </template>
@@ -130,7 +130,7 @@
           />
         </template>
       </headered-section>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
           Jordan Peterson
         </template>

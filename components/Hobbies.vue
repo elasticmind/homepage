@@ -4,7 +4,7 @@
       Hobbies
     </template>
     <template #content>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
           Coffee
         </template>
@@ -24,7 +24,7 @@
           </div>
         </template>
       </headered-section>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
           Cats
         </template>
@@ -46,7 +46,7 @@
           </div>
         </template>
       </headered-section>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
           Nature
         </template>
@@ -65,7 +65,7 @@
           </div>
         </template>
       </headered-section>
-      <headered-section :primary="!$attrs.primary">
+      <headered-section>
         <template #header>
           Music
         </template>

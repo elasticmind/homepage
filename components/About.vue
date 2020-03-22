@@ -21,13 +21,15 @@
       </li>
     </ul>
     <article
-      class="w-full bottom-0 p-4 md:p-12 mb-8 mt-32 text-center bg-primary-dark text-light"
+      class="w-full bottom-0 p-4 md:p-12 mb-8 mt-32 text-center bg-primary text-light"
     >
-      <h1 class="relative z-10 text-5xl md:text-6xl font-sans font-hairline">
+      <h1
+        class="relative z-10 text-5xl md:text-6xl font-sans font-hairline tracking-wide"
+      >
         Tibor Zombory
       </h1>
       <h2
-        class="relative z-10 text-2xl text-primary-light font-roboto-slab font-semibold"
+        class="relative z-10 text-2xl text-light font-roboto-slab font-semibold tracking-widest"
       >
         Javascript developer
       </h2>
@@ -35,7 +37,7 @@
     <div class="flex">
       <a
         href="cv-tibor-zombory.pdf"
-        class="rounded-lg border-2 flex items-center border-secondary-light px-8 py-2 mb-2 mr-2 md:mr-4 ml-auto text-2xl text-secondary-light z-30 hover:bg-secondary-light hover:text-light"
+        class="rounded-lg border-2 flex items-center border-primary-light pl-8 pr-6  mb-2 mr-2 md:mr-4 ml-auto text-2xl text-primary-light z-30 hover:bg-primary-light hover:text-light"
       >
         CV
         <icon class="inline-block" type="chevronRight" />
@@ -85,7 +87,7 @@ export default {
 
 <style lang="less">
 .about {
-  @apply relative min-h-screen w-full bg-dark z-20 pt-48;
+  @apply relative min-h-screen w-full bg-dark-dark z-20 pt-48;
 }
 
 :root {
@@ -117,7 +119,7 @@ export default {
 }
 
 .contact-list__item {
-  @apply absolute w-12 h-12 rounded-full text-light z-0 bg-primary-dark;
+  @apply absolute w-12 h-12 rounded-full text-light z-0;
   animation-duration: 0.5s;
   animation-play-state: running;
   animation-delay: 0;

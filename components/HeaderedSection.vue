@@ -1,12 +1,6 @@
 <template>
-  <section
-    class="section"
-    :class="primary ? 'decor--primary' : 'decor--secondary'"
-  >
-    <header
-      class="section--header"
-      :class="primary ? 'text-secondary' : 'text-primary'"
-    >
+  <section class="section decor">
+    <header class="section--header">
       <h2 class="text-xl mb-2">
         <slot name="header" />
       </h2>
@@ -16,14 +10,7 @@
 </template>
 
 <script>
-export default {
-  props: {
-    primary: {
-      type: Boolean,
-      default: false
-    }
-  }
-}
+export default {}
 </script>
 
 <style lang="less" scoped>
@@ -41,30 +28,18 @@ export default {
     @apply pr-16;
 
     &:not(:first-child) {
-      @apply mt-32;
+      @apply mt-24;
     }
   }
 }
 
-.decor--primary::before,
-.decor--primary::after,
-.decor--secondary::before,
-.decor--secondary::after {
+.decor::before,
+.decor::after {
   content: '';
   width: 10px;
   top: 0;
   right: 0;
-  @apply block shadow-inner h-full absolute;
-}
-
-.decor--primary::before,
-.decor--primary::after {
-  @apply bg-secondary;
-}
-
-.decor--secondary::before,
-.decor--secondary::after {
-  @apply bg-primary-dark;
+  @apply block shadow-inner h-full absolute bg-primary;
 }
 
 .section--header {
@@ -72,11 +47,11 @@ export default {
 }
 
 blockquote {
-  @apply relative pt-12 pb-4 px-16 italic text-center;
+  @apply relative pt-12 pb-8 px-16 italic text-center;
 }
 
 blockquote::before {
   content: '\201C';
-  @apply text-6xl absolute left-0 top-0 ml-2 font-sans opacity-25;
+  @apply text-6xl text-primary absolute left-0 top-0 ml-2 font-sans opacity-100;
 }
 </style>
