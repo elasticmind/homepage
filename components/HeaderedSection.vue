@@ -29,10 +29,20 @@ export default {
 <style lang="less" scoped>
 .section {
   position: relative;
-  @apply pr-16;
+  @apply pr-8;
 
   &:not(:first-child) {
-    @apply mt-32;
+    @apply mt-12;
+  }
+}
+
+@screen md {
+  .section {
+    @apply pr-16;
+
+    &:not(:first-child) {
+      @apply mt-32;
+    }
   }
 }
 

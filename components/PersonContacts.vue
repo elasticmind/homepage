@@ -2,7 +2,7 @@
   <ul class="flex">
     <li v-for="contact in contacts" :key="contact.url" class="m-2">
       <a :href="contact.url">
-        <div class="w-full h-full rounded-full">
+        <div class="w-full h-full rounded-full mr-4">
           <icon :type="contact.type" />
         </div>
       </a>

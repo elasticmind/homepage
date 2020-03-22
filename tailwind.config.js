@@ -6,23 +6,20 @@
  */
 module.exports = {
   theme: {
-    inset: {
-      '0': '0',
-      '1/2': '50%'
-    },
-    minHeight: {
-      '200': '200px'
-    },
-    boxShadow: {
-      default: '0 2px 4px 0 rgba(0,0,0,0.4)',
-      inner: 'inset 0 2px 4px 0 rgba(0,0,0,0.4)'
-    },
-    fontFamily: {
-      roboto: ['Roboto', 'sans-serif'],
-      'roboto-slab': ['Roboto Slab', 'serif'],
-      sans: ['Work Sans', 'sans-serif']
-    },
     extend: {
+      inset: {
+        '0': '0',
+        '1/2': '50%'
+      },
+      boxShadow: {
+        default: '0 2px 4px 0 rgba(0,0,0,0.4)',
+        inner: 'inset 0 2px 4px 0 rgba(0,0,0,0.4)'
+      },
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+        'roboto-slab': ['Roboto Slab', 'serif'],
+        sans: ['Work Sans', 'sans-serif']
+      },
       colors: {
         light: '#f6feff',
         'dark-light': '#212531',
@@ -50,6 +47,7 @@ module.exports = {
     textAlign: ['responsive', 'hover'],
     margin: ['responsive', 'hover'],
     padding: ['responsive', 'hover'],
+    width: ['responsive', 'hover'],
     borderColor: ['hover'],
     borderWidth: ['hover']
   },

@@ -5,7 +5,7 @@
       alt="tibor-zombory-elasticmind-profile-picture"
       class="profile-image"
     />
-    <ul class="list-none">
+    <ul class="contact-list">
       <li
         v-for="contact in $_contacts"
         :key="contact.url"
@@ -31,14 +31,14 @@
       >
         Javascript developer
       </h2>
-      <a
-        href="cv-tibor-zombory.pdf"
-        class="rounded-lg border-2 flex items-center border-secondary-light pl-2 md:px-6 fixed right-0 bottom-0 mb-12 mr-2 md:mr-4 text-xl text-secondary-light z-30 hover:bg-secondary-light hover:text-light"
-      >
-        CV
-        <icon class="inline-block" type="chevronRight" />
-      </a>
     </article>
+    <a
+      href="cv-tibor-zombory.pdf"
+      class="absolute rounded-lg border-2 flex items-center border-secondary-light px-4 right-0 bottom-0 mb-2 mr-2 md:mr-4 text-xl text-secondary-light z-30 hover:bg-secondary-light hover:text-light"
+    >
+      CV
+      <icon class="inline-block" type="chevronRight" />
+    </a>
   </section>
 </template>
 
@@ -83,31 +83,45 @@ export default {
 
 <style lang="less">
 .about {
-  @apply relative h-screen w-full bg-dark z-20 pt-48;
+  @apply relative min-h-screen w-full bg-dark z-20 pt-48;
 }
 
 :root {
-  --profile-image-center-y: 24rem;
+  --contact-ring-radius: 10rem;
+  --contact-ring-vertical-gap: 6rem;
+}
+
+.profile-image {
+  @apply rounded-full relative z-10 border-2 p-1 mx-auto w-48;
 }
 
 @screen md {
   :root {
-    --profile-image-center-y: 20rem;
-    --contact-ring-radius: 450px;
+    --contact-ring-radius: 12rem;
+    --contact-ring-vertical-gap: 8rem;
+  }
+
+.profile-image {
+    @apply w-64;
   }
 }
 
-.profile-image {
-  @apply rounded-full relative z-10 border-2 p-1 mx-auto;
-  width: 16rem;
-}
-
-@contact-ring-radius: 350px;
 @contact-count: 6;
 
+.contact-list {
+  @apply w-0 list-none mx-auto;
+  z-index: 100;
+  display: block;
+  position: relative;
+  background-color: red;
+  width:2px;
+  height: 2px;
+  margin-top: calc(-1 * var(--contact-ring-vertical-gap));
+  margin-bottom: calc(2.5 * var(--contact-ring-vertical-gap));
+}
+
 .contact-list__item {
-  @apply absolute left-1/2 w-12 h-12 rounded-full text-light z-0;
-  top: var(--profile-image-center-y);
+  @apply absolute w-12 h-12 rounded-full text-light z-0;
   animation-duration: 0.5s;
   animation-play-state: running;
   animation-delay: 0;
@@ -128,7 +142,10 @@ export default {
       }
 
       100% {
-        transform: translate(-50% + @contact-ring-radius * cos(2 * pi() * (@value - 5) / @contact-count), -50% + @contact-ring-radius * sin(2 * pi() * (@value - 5) / @contact-count));
+        transform: translate(
+          calc(-50% + var(--contact-ring-radius) * cos(2 * pi() * (@value - 5) / @contact-count)),
+          calc(-50% + var(--contact-ring-radius) * sin(2 * pi() * (@value - 5) / @contact-count))
+        );
       }
     }
   });
