@@ -1,6 +1,5 @@
 <template>
-  <section class="about z-20">
-    <div class="absolute w-full h-full"></div>
+  <section class="about">
     <img
       src="@/assets/images/tibor-zombory-elasticmind-profile-picture.jpg"
       alt="tibor-zombory-elasticmind-profile-picture"
@@ -22,11 +21,8 @@
       </li>
     </ul>
     <article
-      class="absolute w-full bottom-0 p-4 md:p-12 mb-8 text-center text-light"
+      class="w-full bottom-0 p-4 md:p-12 mb-8 mt-32 text-center bg-primary-dark text-light"
     >
-      <div
-        class="bg-primary-dark h-full w-full absolute top-0 left-0 opacity-25"
-      ></div>
       <h1 class="relative z-10 text-5xl md:text-6xl font-sans font-hairline">
         Tibor Zombory
       </h1>
@@ -37,7 +33,7 @@
       </h2>
       <a
         href="cv-tibor-zombory.pdf"
-        class="rounded-lg border-2 flex items-center border-secondary-light pl-2 md:px-6 fixed right-0 bottom-0 mb-12 mr-2 md:mr-4 text-xl text-secondary-light z-30"
+        class="rounded-lg border-2 flex items-center border-secondary-light pl-2 md:px-6 fixed right-0 bottom-0 mb-12 mr-2 md:mr-4 text-xl text-secondary-light z-30 hover:bg-secondary-light hover:text-light"
       >
         CV
         <icon class="inline-block" type="chevronRight" />
@@ -87,7 +83,7 @@ export default {
 
 <style lang="less">
 .about {
-  @apply relative h-screen w-full bg-dark;
+  @apply relative h-screen w-full bg-dark z-20 pt-48;
 }
 
 :root {
@@ -102,18 +98,15 @@ export default {
 }
 
 .profile-image {
-  @apply rounded-full absolute z-10 border-2 p-1;
+  @apply rounded-full relative z-10 border-2 p-1 mx-auto;
   width: 16rem;
-  top: var(--profile-image-center-y);
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 @contact-ring-radius: 350px;
 @contact-count: 6;
 
 .contact-list__item {
-  @apply absolute left-1/2 w-12 h-12 rounded-full text-light;
+  @apply absolute left-1/2 w-12 h-12 rounded-full text-light z-0;
   top: var(--profile-image-center-y);
   animation-duration: 0.5s;
   animation-play-state: running;

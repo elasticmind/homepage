@@ -24,18 +24,17 @@
             software and hardware, he is an acting Security consultant and the
             head of a QA department at a company I've worked previously.
           </p>
-          <p>
-            <person-contacts
-              :contacts="[
-                {
-                  url:
-                    'https://www.linkedin.com/in/hakim-abdel-dadache-a219a7110/',
-                  type: 'linkedin'
-                },
-                { url: 'tel:+36306578256', type: 'phone' }
-              ]"
-            /></p
-        ></template>
+          <person-contacts
+            :contacts="[
+              {
+                url:
+                  'https://www.linkedin.com/in/hakim-abdel-dadache-a219a7110/',
+                type: 'linkedin'
+              },
+              { url: 'tel:+36306578256', type: 'phone' }
+            ]"
+          />
+        </template>
       </headered-section>
       <headered-section :primary="!$attrs.primary">
         <template #header>

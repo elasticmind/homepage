@@ -32,7 +32,7 @@ export default {
   @apply pr-16;
 
   &:not(:first-child) {
-    @apply mt-8;
+    @apply mt-32;
   }
 }
 

@@ -1,10 +1,10 @@
 <template>
   <header class="w-full bg-dark fixed z-50 block md:flex flex-row shadow">
     <h1
-      class="pl-4 md:text-left text-primary-dark text-4xl font-roboto-slab text-center"
+      class="pl-4 md:text-left text-light text-4xl font-roboto-slab text-center"
     >
       <a href="/">
-        elasticmind.design
+        elasticmind<span class="text-primary-light">.</span>design
       </a>
     </h1>
     <app-nav

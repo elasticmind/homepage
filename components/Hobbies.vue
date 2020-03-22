@@ -10,7 +10,7 @@
         </template>
         <template #description>
           <div class="flex flex-col lg:flex-row">
-            <article>
+            <article class="description">
               <p>
                 I'm a coffee lover and a proud owner of a Gaggia Classic Pro and
                 a Eureka Mignon Specialitá. It's all about that speciality
@@ -30,7 +30,7 @@
         </template>
         <template #description>
           <div class="flex flex-col lg:flex-row">
-            <article>
+            <article class="description">
               <p>
                 Although I do not own a cat currently, I adore them. I don't
                 externalize it much in the form of dressing or accessories, but
@@ -52,7 +52,7 @@
         </template>
         <template #description>
           <div class="flex flex-col lg:flex-row">
-            <article>
+            <article class="description">
               <p>
                 I firmly believe that we as a species have lost our way. I love
                 technology and I do not think that we should go back to the
@@ -71,7 +71,7 @@
         </template>
         <template #description>
           <div class="flex flex-col lg:flex-row">
-            <article>
+            <article class="description">
               <p>
                 I once heard a quote in a video, but I do not its author:
               </p>
@@ -108,8 +108,12 @@ export default {
 </script>
 
 <style lang="less">
+.description {
+  @apply w-3/5;
+}
+
 .image {
-  @apply w-48 bg-cover self-center mt-8;
+  @apply w-48 bg-cover self-center mt-8 ml-auto;
   flex: 0 0 300px;
   height: 400px;
   clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
@@ -127,21 +131,25 @@ export default {
 .cat {
   background-image: url('~assets/images/cat.jpg');
   background-position: 80% 0;
+  height: 300px;
 }
 
 .coffee {
   background-image: url('~assets/images/coffee.jpg');
   background-position: 55% 0;
+  height: 200px;
 }
 
 .music {
   background-image: url('~assets/images/music.jpg');
-  background-size: 130%;
-  background-position: 0 75%;
+  background-size: 110%;
+  background-position: 0 69%;
+  height: 300px;
 }
 
 .nature {
   background-image: url('~assets/images/nature.jpg');
   background-position: 0 60%;
+  height: 200px;
 }
 </style>
